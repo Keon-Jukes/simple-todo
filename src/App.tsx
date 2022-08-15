@@ -1,4 +1,5 @@
 import React from 'react';
+import { ModelContextProvider } from './context/modelContext';
 
 import './App.css';
 
