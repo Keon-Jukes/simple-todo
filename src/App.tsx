@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { InputField } from './InputField';
 
 import './App.css';
 
 function App() {
+  
+  //store all todos in app state in todos array full of string
+  const [todos, setTodos] = useState<string[]>([]);
+
   return (
     <div className="App">
       <h1 className='App-title'>Simple Todo 💫</h1>

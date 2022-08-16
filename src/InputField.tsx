@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 export const InputField = () => {
 
-    const [todo, setTodo] = useState('');
+    const [todo, setTodo] = useState<string>('');
 
     return (
         <div>
