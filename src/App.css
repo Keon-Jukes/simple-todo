@@ -46,3 +46,8 @@
 	-webkit-box-shadow: -1px 9px 24px rgba(0, 0, 0, 0.1)  ; 
 	-moz-box-shadow: -1px 9px 24px rgba(0, 0, 0, 0.1)  ; 
 }
+
+.App-subtext {
+  color: rgb(133, 133, 133);
+  font-size: 20px;
+}
