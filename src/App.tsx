@@ -5,6 +5,8 @@ import './App.css';
 
 function App() {
   
+  //Add a Todo
+  const [todo, setTodo] = useState<string>('');
   //store all todos in app state in todos array full of string
   const [todos, setTodos] = useState<string[]>([]);
 

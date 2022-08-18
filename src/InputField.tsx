@@ -6,10 +6,10 @@ export const InputField = () => {
 
     return (
         <div>
-            <span>
+            <form>
             <input title="Add Todo" placeholder="Add a todo"></input>
             <button>Add Todo 💫</button>
-            </span>
+            </form>
         </div>
     )
 }
