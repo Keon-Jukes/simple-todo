@@ -1,20 +1,28 @@
 import React, {useState} from 'react';
-import { InputField } from './InputField';
+import  InputField  from './InputField';
+import { Todo } from './models/models';
 
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  const [todo, setTodo] = useState<string>("");
+  const [todos, setTodos] = useState<Array<Todo>>([]);
   
-  //Add a Todo
-  const [todo, setTodo] = useState<string>('');
-  //store all todos in app state in todos array full of string
-  const [todos, setTodos] = useState<string[]>([]);
+
+  const handleAdd = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (todo) {
+      setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodo("");
+    }
+  };
 
   return (
     <div className="App">
       <h1 className='App-title'>Simple Todo 💫</h1>
       <p className='App-subtext'>Welcome to Simple Todo! Here you can create a todo list of things you need to get done and manage each todo.</p>
-      <InputField />
+      <InputField  todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
     </div>
   );
 }
