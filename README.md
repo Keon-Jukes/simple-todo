@@ -1,4 +1,4 @@
-# Simple Todo List 💫
+# Simple Todo List! 💫
 
 This project was made using React and TypeScript as a way to help me prepare for my upcoming start with Dolby.io as an associate software engineer.
 
